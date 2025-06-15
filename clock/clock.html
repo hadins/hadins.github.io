@@ -148,7 +148,7 @@ Z.prototype.chain=tf,Z.prototype.commit=rf,Z.prototype.next=ef,Z.prototype.plant
 </head>
 <body>
 <div class="container-fluid row">
-  <div class="col-lg-2 col-sm-4">
+  <div class="col-lg-2 col-sm-2 col-2">
     <div id="Server" class="clock">
       <div class="name">Server</div>
       <div class="time">23:59:59</div>
@@ -166,7 +166,7 @@ Z.prototype.chain=tf,Z.prototype.commit=rf,Z.prototype.next=ef,Z.prototype.plant
       <div class="time">23:59:59</div>
     </div>
   </div>
-  <div id="TimeConverterTable" class="col-lg-4 col-sm-8" style="overflow: auto; height: 100vh;">
+  <div id="TimeConverterTable" class="col-lg-6 col-sm-8 col-10" style="overflow: auto; height: 100vh;">
     <table class="table table-bordered table-striped table-hover">
     <thead>
       <tr>
@@ -185,7 +185,7 @@ Z.prototype.chain=tf,Z.prototype.commit=rf,Z.prototype.next=ef,Z.prototype.plant
 </body>
 <style>
 .clock{
-  font-size: 30px;
+  font-size: clamp(0.618rem, 2vw, 1.618rem);
   font-family: "Consolas";
 }
 .name{
@@ -195,8 +195,8 @@ Z.prototype.chain=tf,Z.prototype.commit=rf,Z.prototype.next=ef,Z.prototype.plant
   background-color: rgba(0, 0, 0, .07);
 }
 .table {
-  overflow: auto;
-  height: 600px;
+  font-size: clamp(0.618rem, 2vw, 1rem);
+  font-family: "Consolas";
 }
 .table thead th {
   position: sticky;
